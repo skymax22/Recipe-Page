@@ -1,190 +1,198 @@
 /* Reset styles */
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+	padding: 0; /* Встановлює внутрішні відступи (padding) елементів на 0 */
+	margin: 0; /* Встановлює зовнішні відступи (margin) елементів на 0 */
+	box-sizing: border-box; /* Забезпечує, що padding і border не збільшують розміри елементів */
 }
 
 :root {
 	/* Neutrals */
-	--white: hsl(0, 0%, 100%);
-	--stone-100: hsl(30, 54%, 90%);
-	--stone-150: hsl(30, 18%, 87%);
-	--stone-600: hsl(30, 10%, 34%);
-	--stone-900: hsl(24, 5%, 18%);
+	--white: hsl(0, 0%, 100%); /* Білий фон */
+	--stone-100: hsl(30, 54%, 90%); /* Світло-бежевий */
+	--stone-150: hsl(30, 18%, 87%); /* Світло-сірий */
+	--stone-600: hsl(30, 10%, 34%); /* Темно-сірий */
+	--stone-900: hsl(24, 5%, 18%); /* Дуже темний сірий */
 
 	/* Accents */
-	--brown-800: hsl(14, 45%, 36%);
-	--rose-800: hsl(332, 51%, 32%);
-	--rose-50: hsl(330, 100%, 98%);
+	--brown-800: hsl(14, 45%, 36%); /* Насичений коричневий */
+	--rose-800: hsl(332, 51%, 32%); /* Темно-рожевий */
+	--rose-50: hsl(330, 100%, 98%); /* Дуже світло-рожевий */
 }
 
 body {
-	background-color: var(--stone-100);
-	color: var(--stone-600);
-	min-height: 100vh;
-	font-family: 'Outfit', sans-serif;
-	line-height: 1.4;
-	display: grid;
-	place-content: center;
+	background-color: var(--stone-100); /* Колір фону сторінки */
+	color: var(--stone-600); /* Основний колір тексту */
+	min-height: 100vh; /* Мінімальна висота body — 100% висоти вікна браузера */
+	font-family: 'Outfit', sans-serif; /* Основний шрифт */
+	line-height: 1.4; /* Висота рядка */
+	display: grid; /* Використовується для центрованого розташування */
+	place-content: center; /* Центрує контент по горизонталі та вертикалі */
 }
 
 img {
-	max-width: 100%;
-	display: block;
+	max-width: 100%; /* Зображення не виходитиме за межі батьківського контейнера */
+	display: block; /* Прибирає пробіли під зображенням */
 }
 
 h1, h2 {
-	font-family: 'Young Serif', serif;
-	font-weight: 400;
+	font-family: 'Young Serif', serif; /* Декоративний шрифт для заголовків */
+	font-weight: 400; /* Товщина шрифту */
 }
 
 h1 {
-	color: var(--stone-900);
-	font-size: 45px;
+	color: var(--stone-900); /* Дуже темний сірий колір */
+	font-size: 2.8125rem; /* 45px */
 }
 
 h2 {
-	color: var(--brown-800);
-	margin-bottom: 16px;
+	color: var(--brown-800); /* Коричневий колір */
+	margin-bottom: 1rem; /* 16px */
 }
 
 .recipe-step {
-	margin: 16px 0;
+	margin: 1rem 0; /* Вертикальний відступ */
 }
 
 .Nutrition {
-	margin-top: 16px;
+	margin-top: 1rem; /* Відступ зверху */
 }
 
 ul {
-	padding-left: 20px;
+	padding-left: 1.25rem; /* Відступ зліва у списках */
 }
 
 ul li::marker {
-	color: var(--brown-800);
-	font-weight: bold;
+	color: var(--brown-800); /* Колір маркера списку */
+	font-weight: bold; /* Жирний маркер */
 }
 
 ul li {
-	margin-bottom: 8px;
+	margin-bottom: 0.5rem; /* Відступ знизу між пунктами */
 }
 
 ul li span {
-	color: var(--stone-600);
-	margin-left: 16px;
-	font-weight: 700;
+	color: var(--stone-600); /* Темно-сірий колір тексту */
+	margin-left: 1rem; /* Відступ між маркером і текстом */
+	font-weight: 700; /* Жирний текст */
 }
 
 hr {
-	margin: 24px 0;
-	border: 1px solid var(--stone-150);
+	margin: 1.5rem 0; /* Відступ зверху і знизу */
+	border: 1px solid var(--stone-150); /* Лінія розділення */
 }
 
 .container {
-	max-width: 1440px;
-	background-color: var(--white);
-	margin: 32px;
-	border-radius: 16px;
+	max-width: 90rem; /* Максимальна ширина контейнера (1440px) */
+	background-color: var(--white); /* Білий фон */
+	margin: 2rem auto; /* Центрування і вертикальні відступи */
+	border-radius: 1rem; /* Закруглення кутів */
+	width: 100%; /* Повна ширина */
 }
 
 .container .recipe-image {
-	padding: 32px;
-	border-radius: 16px;
-	overflow: hidden;
+	padding: 2rem; /* Внутрішній відступ */
+	border-radius: 1rem; /* Закруглення кутів */
+	overflow: hidden; /* Обрізає зайве */
 }
 
 .container .recipe-image img {
-	border-radius: 16px;
+	border-radius: 1rem; /* Закруглення зображення */
 }
 
 .recipe-information {
-	padding: 0 32px 32px 32px;
+	padding: 0 2rem 2rem 2rem; /* Внутрішні відступи: зверху 0, з боків 32px, знизу 32px */
 }
 
 .description {
-	margin: 24px 0;
+	margin: 1.5rem 0; /* Відступи зверху і знизу */
 }
 
 .recipe-prep-time {
-	background-color: var(--rose-50);
-	padding: 20px;
-	border-radius: 16px;
+	background-color: var(--rose-50); /* Світло-рожевий фон */
+	padding: 1.25rem; /* Внутрішній відступ */
+	border-radius: 1rem; /* Закруглення кутів */
 }
 
 .recipe-prep-time h3 {
-	color: var(--rose-800);
-	margin-bottom: 12px;
+	color: var(--rose-800); /* Темно-рожевий */
+	margin-bottom: 0.75rem; /* Відступ знизу */
 }
 
 .recipe-prep-time ul li::marker {
-	color: var(--rose-800);
+	color: var(--rose-800); /* Колір маркерів списку */
 }
 
 .ingredients {
-	margin-bottom: 8px;
+	margin-bottom: 0.5rem; /* Відступ знизу */
 }
 
 .ingredients li span {
-	font-weight: initial;
+	font-weight: initial; /* Повертає вагу шрифту до звичайної */
 }
 
 .instruction .item {
-	padding-left: 8px;
-	margin-bottom: 8px;
-	display: flex;
+	padding-left: 0.5rem; /* Відступ зліва */
+	margin-bottom: 0.5rem; /* Відступ знизу */
+	display: flex; /* Гнучке розміщення елементів по горизонталі */
 }
 
 .instruction .item .num {
-	color: var(--brown-800);
-	margin-right: 16px;
-	font-weight: 700;
+	color: var(--brown-800); /* Колір номеру кроку */
+	margin-right: 1rem; /* Відступ справа */
+	font-weight: 700; /* Жирний номер */
 }
 
 .instruction .item p span {
-	font-weight: 700;
+	font-weight: 700; /* Жирний текст дії */
 }
 
 .nutrition-table .values {
-	margin-bottom: 16px;
+	margin-bottom: 1rem; /* Відступ знизу */
 }
 
 .nutrition-table .item {
-	padding: 12px 32px;
-	display: flex;
-	border-bottom: 1px solid var(--stone-150);
+	padding: 0.75rem 2rem; /* Внутрішній відступ: зверху/знизу 12px, з боків 32px */
+	display: flex; /* Гнучке розміщення в ряд */
+	border-bottom: 1px solid var(--stone-150); /* Лінія між елементами */
 }
 
 .nutrition-table .item:last-child {
-	border-bottom: 0;
+	border-bottom: 0; /* Прибирає лінію в останньому рядку */
 }
 
 .nutrition-table .item p:nth-child(2) {
-	color: var(--brown-800);
-	font-weight: 700;
+	color: var(--brown-800); /* Колір значення */
+	font-weight: 700; /* Жирний текст */
 }
 
 .nutrition-table .item > * {
-	width: 100px;
-	margin-right: auto;
+	width: 6.25rem; /* Ширина кожного елемента таблиці (100px) */
+	margin-right: auto; /* Відсуває елементи вліво */
 }
 
 @media (max-width: 540px) {
 	h1 {
-		margin-top: 32px;
-		font-size: 32px;
+		margin-top: 2rem; /* Відступ зверху */
+		font-size: 2rem; /* Менший заголовок на мобільному (32px) */
 	}
 
 	.container {
-		margin: 0;
+		margin: 0; /* Прибирає зовнішній відступ */
 	}
 
 	.container .recipe-image {
-		padding: 0;
-		border-radius: 0;
+		padding: 0; /* Прибирає внутрішній відступ */
+		border-radius: 0; /* Прибирає закруглення */
 	}
 
 	.container .recipe-image img {
-		border-radius: 0;
+		border-radius: 0; /* Теж прибирає закруглення */
+	}
+}
+
+@media (max-width: 375px) {
+	.container {
+		width: 100%; /* Ширина контейнера на мобілках */
+		padding: 0 1rem; /* Відступи всередині (16px) */
 	}
 }
